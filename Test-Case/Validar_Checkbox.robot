@@ -6,7 +6,7 @@ Test Teardown     Fechar navegador
 *** Test Case ***
 
 
-#informar quais itens deve ser procurado na lista como marcado passar como argumento 
+#Informar quais itens deve ser verificar nos checkbox 
 Cenario 1 - Testes
-    Captura quantidade de checkbox da tela       Lettuce    Tomato        
+    Verificar Checkbox da pagina selecionada       Lettuce    Tomato        
     Valida se houve sucesso na comparação 

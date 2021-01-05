@@ -8,7 +8,7 @@ Library    Collections
 ${BROWSER}    chrome
 #URL que contem a checkbox a ser mapeada 
 ${URL_CHECKBOX}                   https://www.w3.org/TR/wai-aria-practices-1.1/examples/checkbox/checkbox-1/checkbox-1.html
-#mapeamento do elemento das checkbox
+#mapeamento do elemento das checkbox mapear elemento de forma generica o mopeamento deve mostrar todos os checkbox 
 ${ELEMENT_CHECKBOX}               xpath=(//*[@role="checkbox"])
 @{CHECKBOX}             
 ${NOME_CHECKBOX}
@@ -26,7 +26,7 @@ Fechar navegador
         Capture Page Screenshot
         Close Browser
         
-Captura quantidade de checkbox da tela  
+Verificar Checkbox da pagina selecionada 
   
     #Recebe por argumentos quais são os checkbox que devem ser validados
     [Arguments]     @{CHECKBOX}
@@ -78,6 +78,6 @@ Valida se houve sucesso na comparação
     
      ${numero_checkbox}    Get length    ${CHECKBOX}  
 
-     Run Keyword If     ${numero_sucesso} == ${numero_checkbox}    log to console   "SUCESSO Pagina contem as checkbox informadas"   ELSE   Fail    Pagina não contem as checkbox informadas    
+     Run Keyword If     ${numero_sucesso} == ${numero_checkbox}    log to console   "Pagina contem as checkbox informadas"   ELSE   Fail    Pagina não contem as checkbox informadas    
 
  
