@@ -1,0 +1,5 @@
+#Robot Framework Tests Suites
+test/**/log.html
+test/**/report.html
+test/**/output.xml
+/results/*
